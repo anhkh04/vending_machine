@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/tdtu/mon hoc/2024-2025/HK1/DO_AN_CHUYEN_NGANH/code/quartus/ex18/simulation/qsim
+vex18
+Z1 !s110 1734077425
+!i10b 1
+!s100 Nb3G@cGGVDiV_LQlRA40L1
+IbHU@FYlU=[cO>9n`JA5on2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1734077424
+8ex18.vo
+Fex18.vo
+L0 32
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1734077425.000000
+!s107 ex18.vo|
+!s90 -work|work|ex18.vo|
+!i113 1
+Z5 o-work work
+vex18_vlg_vec_tst
+R1
+!i10b 1
+!s100 Cm2ljQbJZ8R@;o>?8j1<20
+Ih?OCC5lAhYPcbiIFlhzSX1
+R2
+R0
+w1734077418
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5

@@ -1,0 +1,951 @@
+$comment
+	File created using the following command:
+		vcd file ex18.msim.vcd -direction
+$end
+$date
+	Fri Dec 13 15:10:26 2024
+$end
+$version
+	ModelSim Version 10.4b
+$end
+$timescale
+	1ps
+$end
+
+$scope module ex18_vlg_vec_tst $end
+$var reg 1 ! cancel $end
+$var reg 1 " clk $end
+$var reg 1 # five_in $end
+$var reg 1 $ rst $end
+$var reg 1 % sel_candy $end
+$var reg 1 & sel_coca $end
+$var reg 1 ' sel_coffee $end
+$var reg 1 ( sel_water $end
+$var reg 1 ) ten_in $end
+$var reg 1 * twenty_in $end
+$var wire 1 + candy $end
+$var wire 1 , coca $end
+$var wire 1 - coffee $end
+$var wire 1 . five_out $end
+$var wire 1 / ten_out $end
+$var wire 1 0 water $end
+
+$scope module i1 $end
+$var wire 1 1 gnd $end
+$var wire 1 2 vcc $end
+$var wire 1 3 unknown $end
+$var tri1 1 4 devclrn $end
+$var tri1 1 5 devpor $end
+$var tri1 1 6 devoe $end
+$var wire 1 7 water~output_o $end
+$var wire 1 8 candy~output_o $end
+$var wire 1 9 coca~output_o $end
+$var wire 1 : coffee~output_o $end
+$var wire 1 ; five_out~output_o $end
+$var wire 1 < ten_out~output_o $end
+$var wire 1 = clk~input_o $end
+$var wire 1 > five_in~input_o $end
+$var wire 1 ? sel_water~input_o $end
+$var wire 1 @ sel_candy~input_o $end
+$var wire 1 A sel_coca~input_o $end
+$var wire 1 B sel_coffee~input_o $end
+$var wire 1 C ten_in~input_o $end
+$var wire 1 D Selector3~0_combout $end
+$var wire 1 E rst~input_o $end
+$var wire 1 F present_state.water_10~q $end
+$var wire 1 G twenty_in~input_o $end
+$var wire 1 H next_state~0_combout $end
+$var wire 1 I Selector5~0_combout $end
+$var wire 1 J Selector5~1_combout $end
+$var wire 1 K present_state.candy_0~q $end
+$var wire 1 L cancel~input_o $end
+$var wire 1 M next_state~1_combout $end
+$var wire 1 N Selector6~0_combout $end
+$var wire 1 O present_state.candy_5~q $end
+$var wire 1 P Selector8~0_combout $end
+$var wire 1 Q Selector7~0_combout $end
+$var wire 1 R Selector7~1_combout $end
+$var wire 1 S present_state.candy_10~q $end
+$var wire 1 T present_state.candy_15~q $end
+$var wire 1 U Selector17~0_combout $end
+$var wire 1 V Selector17~1_combout $end
+$var wire 1 W present_state.coca_0~q $end
+$var wire 1 X Selector18~0_combout $end
+$var wire 1 Y present_state.coca_5~q $end
+$var wire 1 Z Selector19~0_combout $end
+$var wire 1 [ Selector19~1_combout $end
+$var wire 1 \ present_state.coca_10~q $end
+$var wire 1 ] Selector20~0_combout $end
+$var wire 1 ^ Selector20~1_combout $end
+$var wire 1 _ present_state.coca_15~q $end
+$var wire 1 ` Selector21~0_combout $end
+$var wire 1 a next_state.coca_35~0_combout $end
+$var wire 1 b Selector21~1_combout $end
+$var wire 1 c present_state.coca_20~q $end
+$var wire 1 d process_1~0_combout $end
+$var wire 1 e Selector10~0_combout $end
+$var wire 1 f present_state.coffee_0~q $end
+$var wire 1 g Selector14~0_combout $end
+$var wire 1 h Selector11~0_combout $end
+$var wire 1 i present_state.coffee_5~q $end
+$var wire 1 j Selector12~0_combout $end
+$var wire 1 k Selector12~1_combout $end
+$var wire 1 l present_state.coffee_10~q $end
+$var wire 1 m Selector13~0_combout $end
+$var wire 1 n Selector13~1_combout $end
+$var wire 1 o present_state.coffee_15~q $end
+$var wire 1 p Selector14~1_combout $end
+$var wire 1 q Selector14~2_combout $end
+$var wire 1 r present_state.coffee_20~q $end
+$var wire 1 s Selector15~0_combout $end
+$var wire 1 t Selector15~1_combout $end
+$var wire 1 u present_state.coffee_25~q $end
+$var wire 1 v Selector0~0_combout $end
+$var wire 1 w Selector25~0_combout $end
+$var wire 1 x present_state.refund_15~q $end
+$var wire 1 y Selector23~0_combout $end
+$var wire 1 z Selector23~1_combout $end
+$var wire 1 { present_state.refund_5~q $end
+$var wire 1 | next_state.refund_20~0_combout $end
+$var wire 1 } present_state.refund_20~q $end
+$var wire 1 ~ Selector24~0_combout $end
+$var wire 1 !! Selector24~1_combout $end
+$var wire 1 "! present_state.refund_10~q $end
+$var wire 1 #! next_state.candy_30~0_combout $end
+$var wire 1 $! present_state.candy_30~q $end
+$var wire 1 %! Selector9~0_combout $end
+$var wire 1 &! Selector9~1_combout $end
+$var wire 1 '! present_state.candy_20~q $end
+$var wire 1 (! next_state.coca_35~1_combout $end
+$var wire 1 )! present_state.coca_35~q $end
+$var wire 1 *! Selector22~0_combout $end
+$var wire 1 +! Selector22~1_combout $end
+$var wire 1 ,! present_state.coca_25~q $end
+$var wire 1 -! next_state.coffee_40~0_combout $end
+$var wire 1 .! present_state.coffee_40~q $end
+$var wire 1 /! Selector16~0_combout $end
+$var wire 1 0! Selector16~1_combout $end
+$var wire 1 1! present_state.coffee_30~q $end
+$var wire 1 2! WideOr4~0_combout $end
+$var wire 1 3! next_state.water_25~0_combout $end
+$var wire 1 4! present_state.water_25~q $end
+$var wire 1 5! Selector4~0_combout $end
+$var wire 1 6! present_state.water_20~q $end
+$var wire 1 7! next_state.candy_25~0_combout $end
+$var wire 1 8! present_state.candy_25~q $end
+$var wire 1 9! next_state.coca_30~0_combout $end
+$var wire 1 :! present_state.coca_30~q $end
+$var wire 1 ;! next_state.coffee_35~0_combout $end
+$var wire 1 <! present_state.coffee_35~q $end
+$var wire 1 =! WideOr5~1_combout $end
+$var wire 1 >! Selector0~1_combout $end
+$var wire 1 ?! next_state~2_combout $end
+$var wire 1 @! Selector0~2_combout $end
+$var wire 1 A! present_state.idle~q $end
+$var wire 1 B! Selector1~0_combout $end
+$var wire 1 C! Selector1~1_combout $end
+$var wire 1 D! present_state.water_0~q $end
+$var wire 1 E! Selector2~0_combout $end
+$var wire 1 F! present_state.water_5~q $end
+$var wire 1 G! next_state.water_15~0_combout $end
+$var wire 1 H! present_state.water_15~q $end
+$var wire 1 I! WideOr0~0_combout $end
+$var wire 1 J! WideOr2~0_combout $end
+$var wire 1 K! WideOr3~0_combout $end
+$var wire 1 L! WideOr1~0_combout $end
+$var wire 1 M! WideOr4~combout $end
+$var wire 1 N! WideOr5~0_combout $end
+$var wire 1 O! WideOr5~2_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+12
+x3
+14
+15
+16
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+1H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+1U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+0/!
+00!
+01!
+12!
+03!
+04!
+05!
+06!
+07!
+08!
+09!
+0:!
+0;!
+0<!
+1=!
+0>!
+1?!
+0@!
+0A!
+1B!
+0C!
+0D!
+0E!
+0F!
+0G!
+0H!
+0I!
+0J!
+0K!
+0L!
+0M!
+0N!
+0O!
+$end
+#5000
+1"
+1=
+#10000
+1(
+0"
+1?
+0=
+0?!
+0U
+1C!
+1@!
+#15000
+1"
+1=
+1D!
+1A!
+0B!
+#20000
+0(
+0"
+0?
+0=
+1?!
+#25000
+1"
+1=
+#30000
+1*
+0"
+1G
+0=
+1a
+1M
+0H
+15!
+0C!
+#35000
+1"
+1=
+0D!
+16!
+0=!
+05!
+1I!
+17
+1>!
+10
+1O!
+1<
+1/
+0@!
+#40000
+0*
+0"
+0G
+0=
+0a
+0M
+1H
+#45000
+1"
+1=
+0A!
+06!
+1B!
+1U
+1=!
+0I!
+07
+0>!
+00
+0O!
+0<
+0/
+#50000
+0"
+0=
+#55000
+1"
+1=
+#60000
+0"
+0=
+#65000
+1"
+1=
+#70000
+0"
+0=
+#75000
+1"
+1=
+#80000
+0"
+0=
+#85000
+1"
+1=
+#90000
+0"
+0=
+#95000
+1"
+1=
+#100000
+0"
+0=
+#105000
+1"
+1=
+#110000
+0"
+0=
+#115000
+1"
+1=
+#120000
+0"
+0=
+#125000
+1"
+1=
+#130000
+0"
+0=
+#135000
+1"
+1=
+#140000
+0"
+0=
+#145000
+1"
+1=
+#150000
+0"
+0=
+#155000
+1"
+1=
+#160000
+0"
+0=
+#165000
+1"
+1=
+#170000
+0"
+0=
+#175000
+1"
+1=
+#180000
+0"
+0=
+#185000
+1"
+1=
+#190000
+0"
+0=
+#195000
+1"
+1=
+#200000
+0"
+0=
+#205000
+1"
+1=
+#210000
+0"
+0=
+#215000
+1"
+1=
+#220000
+0"
+0=
+#225000
+1"
+1=
+#230000
+0"
+0=
+#235000
+1"
+1=
+#240000
+0"
+0=
+#245000
+1"
+1=
+#250000
+0"
+0=
+#255000
+1"
+1=
+#260000
+0"
+0=
+#265000
+1"
+1=
+#270000
+0"
+0=
+#275000
+1"
+1=
+#280000
+0"
+0=
+#285000
+1"
+1=
+#290000
+0"
+0=
+#295000
+1"
+1=
+#300000
+0"
+0=
+#305000
+1"
+1=
+#310000
+0"
+0=
+#315000
+1"
+1=
+#320000
+0"
+0=
+#325000
+1"
+1=
+#330000
+0"
+0=
+#335000
+1"
+1=
+#340000
+0"
+0=
+#345000
+1"
+1=
+#350000
+0"
+0=
+#355000
+1"
+1=
+#360000
+0"
+0=
+#365000
+1"
+1=
+#370000
+0"
+0=
+#375000
+1"
+1=
+#380000
+0"
+0=
+#385000
+1"
+1=
+#390000
+0"
+0=
+#395000
+1"
+1=
+#400000
+0"
+0=
+#405000
+1"
+1=
+#410000
+0"
+0=
+#415000
+1"
+1=
+#420000
+0"
+0=
+#425000
+1"
+1=
+#430000
+0"
+0=
+#435000
+1"
+1=
+#440000
+0"
+0=
+#445000
+1"
+1=
+#450000
+0"
+0=
+#455000
+1"
+1=
+#460000
+0"
+0=
+#465000
+1"
+1=
+#470000
+0"
+0=
+#475000
+1"
+1=
+#480000
+0"
+0=
+#485000
+1"
+1=
+#490000
+0"
+0=
+#495000
+1"
+1=
+#500000
+0"
+0=
+#505000
+1"
+1=
+#510000
+0"
+0=
+#515000
+1"
+1=
+#520000
+0"
+0=
+#525000
+1"
+1=
+#530000
+0"
+0=
+#535000
+1"
+1=
+#540000
+0"
+0=
+#545000
+1"
+1=
+#550000
+0"
+0=
+#555000
+1"
+1=
+#560000
+0"
+0=
+#565000
+1"
+1=
+#570000
+0"
+0=
+#575000
+1"
+1=
+#580000
+0"
+0=
+#585000
+1"
+1=
+#590000
+0"
+0=
+#595000
+1"
+1=
+#600000
+0"
+0=
+#605000
+1"
+1=
+#610000
+0"
+0=
+#615000
+1"
+1=
+#620000
+0"
+0=
+#625000
+1"
+1=
+#630000
+0"
+0=
+#635000
+1"
+1=
+#640000
+0"
+0=
+#645000
+1"
+1=
+#650000
+0"
+0=
+#655000
+1"
+1=
+#660000
+0"
+0=
+#665000
+1"
+1=
+#670000
+0"
+0=
+#675000
+1"
+1=
+#680000
+0"
+0=
+#685000
+1"
+1=
+#690000
+0"
+0=
+#695000
+1"
+1=
+#700000
+0"
+0=
+#705000
+1"
+1=
+#710000
+0"
+0=
+#715000
+1"
+1=
+#720000
+0"
+0=
+#725000
+1"
+1=
+#730000
+0"
+0=
+#735000
+1"
+1=
+#740000
+0"
+0=
+#745000
+1"
+1=
+#750000
+0"
+0=
+#755000
+1"
+1=
+#760000
+0"
+0=
+#765000
+1"
+1=
+#770000
+0"
+0=
+#775000
+1"
+1=
+#780000
+0"
+0=
+#785000
+1"
+1=
+#790000
+0"
+0=
+#795000
+1"
+1=
+#800000
+0"
+0=
+#805000
+1"
+1=
+#810000
+0"
+0=
+#815000
+1"
+1=
+#820000
+0"
+0=
+#825000
+1"
+1=
+#830000
+0"
+0=
+#835000
+1"
+1=
+#840000
+0"
+0=
+#845000
+1"
+1=
+#850000
+0"
+0=
+#855000
+1"
+1=
+#860000
+0"
+0=
+#865000
+1"
+1=
+#870000
+0"
+0=
+#875000
+1"
+1=
+#880000
+0"
+0=
+#885000
+1"
+1=
+#890000
+0"
+0=
+#895000
+1"
+1=
+#900000
+0"
+0=
+#905000
+1"
+1=
+#910000
+0"
+0=
+#915000
+1"
+1=
+#920000
+0"
+0=
+#925000
+1"
+1=
+#930000
+0"
+0=
+#935000
+1"
+1=
+#940000
+0"
+0=
+#945000
+1"
+1=
+#950000
+0"
+0=
+#955000
+1"
+1=
+#960000
+0"
+0=
+#965000
+1"
+1=
+#970000
+0"
+0=
+#975000
+1"
+1=
+#980000
+0"
+0=
+#985000
+1"
+1=
+#990000
+0"
+0=
+#995000
+1"
+1=
+#1000000
