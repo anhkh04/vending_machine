@@ -12,11 +12,11 @@ END vending_machine;
 
 ARCHITECTURE fsm OF vending_machine IS
 
-	TYPE state IS (idle, water_0, water_5, water_10, water_15, water_20, water_25, 
-						candy_0, candy_5, candy_10, candy_15, candy_20, candy_25, candy_30,
-						coffee_0, coffee_5, coffee_10, coffee_15, coffee_20, coffee_25, coffee_30, coffee_35, coffee_40,
-						coca_0, coca_5, coca_10, coca_15, coca_20, coca_25, coca_30, coca_35,
-						refund_5, refund_10, refund_15, refund_20);
+	TYPE state IS ( idle, water_0, water_5, water_10, water_15, water_20, water_25, 
+			candy_0, candy_5, candy_10, candy_15, candy_20, candy_25, candy_30,
+			coffee_0, coffee_5, coffee_10, coffee_15, coffee_20, coffee_25, coffee_30, coffee_35, coffee_40,
+			coca_0, coca_5, coca_10, coca_15, coca_20, coca_25, coca_30, coca_35,
+			refund_5, refund_10, refund_15, refund_20);
 	SIGNAL present_state, next_state: STATE;
 	
 BEGIN
